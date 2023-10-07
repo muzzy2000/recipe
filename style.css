@@ -70,14 +70,85 @@ body {
     "aside"
     "footer";
 }
+
+menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+menu {
+    margin-left: 20px;
+}
+
+menu a {
+    text-decoration: none;
+    color: #EB5428;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+menu li :hover {
+    color: #7ABFBF;
+}
+
 header {
     grid-area: header;
     padding-top: 180px;
 }
+
 header img {
     width: 100%;
 }
 
+header p {
+    padding: 10px;
+}
+
+#details h2 {
+    padding: 20px;
+}
+
+#ingredients h2 {
+    padding: 20px;
+}
+
+#ingredients ul {
+    list-style-type: square;
+    padding-left: 30px;
+    line-height: 2rem;
+}
+
+#directions h2 {
+    padding: 20px;
+}
+
+#directions ol {
+    list-style-type: lower-roman;
+    padding-left: 25px;
+    line-height: 1.5rem;
+    padding-bottom: 20px;
+}
+
+#dishes h2 {
+    padding: 10px;
+}
+
+#dishes img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+#dishes h3 {
+    
+}
+ 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
@@ -100,17 +171,31 @@ h3 {
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    line-height: 1.5rem;
+}
+
+dl {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: max-content auto;
+    line-height: 1.5rem;
 }
 
 dd {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    grid-column-start: 2;
 }
 
 dt {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
+    grid-column-start: 1;
+}
+
+#dishes {
+    background-color: #7ABFBF;
 }
 
 nav {
@@ -151,6 +236,13 @@ input {
 footer {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
+    background-color: #F2F2F2;
+    text-align: center;
+    font-weight: bold;
+}
+
+:focus {
+    border: 5px solid #EB5428;
 }
 
 
